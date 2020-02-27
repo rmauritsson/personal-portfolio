@@ -10,23 +10,33 @@
      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Open+Sans&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="css/style.css">
 
+
    </head>
    <body>
      <header>
-       <div class="logo">
-         <img src="images/Career-Logo-small.png" alt="">
-       </div>
-       <button type="button" class="nav-toggle" aria-label="toggle navigation">
-         <span class="hamburger"></span>
-       </button>
-       <nav class="nav">
-         <ul class="nav__list">
-           <li class="nav__item"><a href="#home">Home</a></li>
-           <li class="nav__item"><a href="#services">My Services</a></li>
-           <li class="nav__item"><a href="#about">About Me</a></li>
-           <li class="nav__item"><a href="#">My Work</a></li>
-         </ul>
-       </nav>
+       <nav class="navbar">
+      <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+          <i class="fa fa-bars"></i>
+      </label>
+      <div class="logo">
+        <img src="images/Career-Logo-Dark-small.png" alt="">
+      </div>
+      <input type="checkbox" id="chkToggle"></input>
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="#home" class="nav-links">Home</a>
+        </li>
+        <li>
+          <a href="#services" class="nav-links">My Services</a>
+        </li>
+        <li>
+          <a href="#about" class="nav-links">About Me</a>
+        </li>
+        <li>
+          <a href="#work" class="nav-links">My Work</a>
+        </li>
+      </ul>
+    </nav>
      </header>
 
      <!-- Intro Section--->
@@ -75,38 +85,86 @@
        <img src="images/2019-06-27-min.jpg" alt="" class="about-me__img" >
      </section>
 
-     <!-- My Work Section--->
-     <section class="my-work" id="work">
-       <h2 class="section__title">My Work</h2>
-       <p class="section__subtitle"></p>
-       <div class="portfolio">
-         <a href="#" class="portfolio__item">
-         <img src="images/projects/freemanmovers1.png" alt=""></a>
-         <a href="#" class="portfolio__item">
-         <img src="images/projects/brokenvessel.png" alt=""></a>
-         <a href="#" class="portfolio__item">
-         <img src="images/projects/justifiedecstasy1.png" alt=""></a>
-         <a href="#" class="portfolio__item">
-         <img src="images/projects/megamilk.png" alt=""></a>
-         <a href="#" class="portfolio__item">
-         <img src="images/projects/sweetlulucakes.png" alt=""></a>
-       </div>
-     </section>
+     <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+            <div class="portfolio">
+                <div class="portfolio__card">
+                  <a href="#" class="portfolio__item">
+                      <img src="images/projects/freemanmovers1.png" alt="" class="portfolio__img">
+                  </a>
+                  <div class="portfolio__info">
+                    <a href="http://freemanmovers.com/" class="btn"><i class="fas fa-globe-americas"></i>Live Preview</a>
+                  </div>
+                </div>
+
+                <div class="portfolio__card">
+                  <a href="#" class="portfolio__item">
+                      <img src="images/projects/minerva.jpeg" alt="" class="portfolio__img">
+                  </a>
+                  <div class="portfolio__info">
+                    <a href="https://the-african-investment-network.herokuapp.com/" class="btn"><i class="fas fa-globe-americas"></i>Live Preview</a>
+                    <a href="https://github.com/rmauritsson/minerva" class="btn"><i class="fab fa-github"></i>Source Code</a>
+                  </div>
+                </div>
+
+                <div class="portfolio__card">
+                  <a href="#" class="portfolio__item">
+                      <img src="images/projects/justifiedecstasy2.png" alt="" class="portfolio__img">
+                  </a>
+                  <div class="portfolio__info">
+                    <a href="https://justifiedecstasy.com/" class="btn"><i class="fas fa-globe-americas"></i>Live Preview</a>
+                  </div>
+                </div>
+
+                <div class="portfolio__card">
+                  <a href="#" class="portfolio__item">
+                      <img src="images/projects/brokenvessel.png" alt="" class="portfolio__img">
+                  </a>
+                  <div class="portfolio__info">
+                    <a href="http://brokenvessel.online/" class="btn"><i class="fas fa-globe-americas"></i>Live Preview</a>
+                    <a href="https://github.com/rmauritsson/broken-vessel" class="btn"><i class="fab fa-github"></i>Source Code</a>
+                  </div>
+                </div>
+
+                <div class="portfolio__card">
+                  <a href="#" class="portfolio__item">
+                      <img src="images/projects/megamilk.png" alt="" class="portfolio__img">
+                  </a>
+                  <div class="portfolio__info">
+                    <a href="http://megamilk.ug/" class="btn"><i class="fas fa-globe-americas"></i>Live Preview</a>
+                  </div>
+                </div>
+
+                <div class="portfolio__card">
+                  <a href="#" class="portfolio__item">
+                      <img src="images/projects/sweetlulucakes.png" alt="" class="portfolio__img">
+                  </a>
+                  <div class="portfolio__info">
+                    <a href="https://sweetlulucakes.com/" class="btn"><i class="fas fa-globe-americas"></i>Live Preview</a>
+                  </div>
+                </div>
+
+            </div>
+        </section>
 
      <!-- Footer--->
-     <footer>
-       <a href="mailto:leonard.kanyesigye@gmail.com?subject=Hello">Email me</a>
+     <footer class="footer">
+       <a href="mailto:leonard.kanyesigye@gmail.com?subject=Hello" class="footer__link">leonard.kanyesigye@gmail.com</a>
        <ul class="social-list">
          <li class="social-list__item">
-           <a href="#" class="social-list__link">Twitter</a>
+           <a href="https://twitter.com/leokanye" class="social-list__link"><i class="fab fa-twitter-square"></i></a>
          </li>
          <li class="social-list__item">
-           <a href="#" class="social-list__link">LinkedIn</a>
+           <a href="https://www.linkedin.com/in/leonard-rwai-kanyesigye/" class="social-list__link"><i class="fab fa-linkedin"></i></a>
          </li>
          <li class="social-list__item">
-           <a href="#" class="social-list__link">Github</a>
+           <a href="https://github.com/rmauritsson/" class="social-list__link"><i class="fab fa-github-square"></i></a>
          </li>
        </ul>
      </footer>
+
    </body>
  </html>
